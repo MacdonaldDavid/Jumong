@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Jumong</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="jumong_logo2.jpg">
+    <script src="https://kit.fontawesome.com/dc0929a05e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="social_float">
+        <div class="social" id="facebook">
+            <a href="https://web.facebook.com/jumongprojectsltd"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQinkKhh6KEJagFiRP44_KY-ygxDA5E4AkSp3GXwPgImg&s"
+                    alt=""></a>
+        </div>
+        <div class="social" id="twitter">
+            <a href="http://twitter.com"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI7eRQb9HdeyvAErXySNTA-LAC305f1OEh56CX2kEacg&s"
+                    alt=""></a>
+        </div>
+        <div class="social" id="instagram">
+            <a href="http://instagram.com"><img
+                    src="https://image.similarpng.com/very-thumbnail/2020/05/Vector-Instagram-icon-PNG.png" alt=""></a>
+        </div>
+        <div class="social" onclick="showSocial()" id="social">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85-2x0af8KQt-k5n3FpEonVpQFu4L8c4SmA52D8sbDg&s"
+                alt="">
+        </div>
+    </div>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="jumong_logo-removebg-preview.png" alt="" title="Home"></a>
+        </div>
+        <ul>
+            <li><a href="index.html" class="nav_link" id="home_nav">Home</a></li>
+            <li><a href="services.html" class="nav_link" id="services_nav">Services</a></li>
+            <li><a href="about.html" class="nav_link" id="about_nav">About</a></li>
+            <li><a href="contact.html" class="nav_link" id="contact_nav">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="index_body1">
+        <div class="image_container">
+            <img src="https://th.bing.com/th/id/R.300043f7a33d2a35dd19e26b4defe884?rik=VtLC680rY2Yzkg&pid=ImgRaw&r=0"
+                alt="construct">
+        </div>
+        <div class="index_body1_content">
+            <h1>JUMONG PROJECTS LIMITED</h1>
+            <p>DEVELOPER OF JUMONG SWEET HOMES</p>
+            <a href="services.html">Learn more <i class="fa-solid fa-arrow-right" id="arrow_right"></i></a>
+        </div>
+    </div>
+    <hr style="border: 2px solid #9AD3FF;">
+    <div class="index_body2">
+        <div class="head1">
+            <h1>About Us</h1>
+        </div>
+        <div class="index_body2_content">
+            <p class="paragraph1"> <span>Welcome</span> to your premier choice for residential and commercial
+                construction, and real estate services.
+                We are committed to delivering exceptional quality and craftsmanship in every project we undertake.
+                We pride ourselves on our dedication to customer satisfaction, attention to detail, and innovative
+                solutions.
+            </p>
+            <hr style="width: 95%; align-self: center;">
+            <p class="paragraph2">
+                <span>Our team</span> of skilled professionals consists of architects, engineers, project managers, and
+                construction experts who work collaboratively to bring your vision to life.
+                Whether you're looking to build your dream home, renovate your existing space, or invest in a commercial
+                property, we have the expertise and resources to make it happen.
+            </p>
+        </div>
+    </div>
+    <hr style="border: 2px solid gold;">
+    <div class="index_body3">
+        <div class="head1">
+            <h1>Services</h1>
+            <hr>
+        </div>
+        <div class="index_body3_residential">
+            <div class="residential_icon" onclick="openResidential()">
+                <img src="residentiall.png" alt="">
+                <h1>Residential construction <i class="fa-solid fa-circle-chevron-down" id="chev_down1"></i></h1>
+            </div>
+            <hr class="residential_open">
+            <div class="residential_stuff">
+                <div class="residential_image">
+                    <img src="https://cdn2.hubspot.net/hubfs/2004318/homebuilding.jpg" alt="residential">
+                </div>
+                <div class="residential_content">
+                    <p>Residential Construction</p>
+                    <hr style="border: 2px solid black;">
+                </div>
+            </div>
+        </div>
+        <div class="index_body3_commercial">
+            <div class="commercial_icon" onclick="openCommercial()">
+                <img src="commercial.png" alt="">
+                <h1>Commercial construction <i class="fa-solid fa-circle-chevron-down" id="chev_down2"></i></h1>
+            </div>
+            <hr class="commercial_open">
+            <div class="commercial_stuff">
+                <div class="commercial_image">
+                    <img src="https://cdn.pixabay.com/photo/2024/02/08/13/45/ai-generated-8561123_1280.jpg"
+                        alt="commercial">
+                </div>
+                <div class="commercial_content">
+                    <p>Commercial Construction</p>
+                    <hr style="border: 2px solid black;">
+                </div>
+            </div>
+        </div>
+        <div class="index_body3_units">
+            <div class="units_icon" onclick="openUnits()">
+                <img src="sales.png" alt="">
+                <h1>Unit Sales <i class="fa-solid fa-circle-chevron-down" id="chev_down3"></i></h1>
+            </div>
+            <hr class="units_open">
+            <div class="units_stuff">
+                <div class="units_image">
+                    <img src="https://c0.wallpaperflare.com/preview/846/285/222/bills-broker-budget-build.jpg" alt=" ">
+                </div>
+                <div class="units_content">
+                    <p>Unit Sales</p>
+                    <hr style="border: 2px solid black;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index_body4">
+        <div class="head1">
+            <h1 class="head2">Projects</h1>
+            <hr style="border: 2px solid #9AD3FF;">
+        </div>
+        <p class="paragraph1"> <span style="color: gold;">Explore</span> some of our recent projects that showcase our
+            commitment to quality,
+            innovation, and
+            client
+            satisfaction.
+        </p>
+        <div class="slider">
+            <div class="slides">
+                <img class="slide" src="saad-salim-PqRvLsjD_TU-unsplash.jpg" alt="">
+                <img class="slide" src="jumong2.jpeg" alt="">
+                <img class="slide" src="just_jumong.png" alt="">
+                <img class="slide" src="jumongg.jpg" alt="">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    <div class="intermission">
+        <div>
+            <h1>100+</h1>
+            <p>Projects Completed</p>
+        </div>
+        <hr>
+        <div>
+            <h1>95%</h1>
+            <p>Customer Satisfaction</p>
+        </div>
+        <hr>
+        <div>
+            <h1>50+</h1>
+            <p>Expert Team Members</p>
+        </div>
+        <hr>
+        <div>
+            <h1>5</h1>
+            <p>Years of Excellence</p>
+        </div>
+    </div>
+    <div class="video1">
+        <video autoplay muted>
+            <source src="jumong_vid.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="index_body5">
+        <h1>Contact Us</h1>
+        <p>Interested in working with us? Contact us now!</p>
+        <div class="index_body5_input">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="phone" placeholder="Phone" required>
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <textarea name="message" id="" placeholder="Message" required></textarea>
+        <input type="button" value="Submit">
+    </div>
+    <footer>
+        <div class="footer_content">
+            <p><i class="fa-solid fa-location-dot"></i> HOUSE 80, FIRST AVENUE GWARIMPA ABUJA., GWARIMPA, FCT</p>
+            <a href="https://wa.me/903 286 9318"><i class="fa-solid fa-phone"></i> 0903 286 9318</a>
+            <a href="contact.html"> <i class="fa-solid fa-envelope"></i> jumongprojects@gmail.com</a>
+        </div>
+        <div class="social_icon_container">
+            <a href="https://web.facebook.com/jumongprojectsltd" class="social_icon" target="_blank"><i
+                    class="fab fa-facebook-f"></i> Jumong Projects Limited</a>
+            <a href="#" class="social_icon" target="_blank"><i class="fab fa-twitter"></i> Twitter Link</a>
+            <a href="#" class="social_icon" target="_blank"><i class="fab fa-instagram"></i> Instagram Link</a>
+        </div>
+        <p> &copy 2024 Jumong Projects LTD. All rights reserved.</p>
+    </footer>
+    <script defer src="javaS.js"></script>
+</body>
+
+</html>
