@@ -11,35 +11,24 @@
 </head>
 
 <body>
-    <div class="social_float">
-        <div class="social" id="facebook">
-            <a href="https://web.facebook.com/jumongprojectsltd"><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQinkKhh6KEJagFiRP44_KY-ygxDA5E4AkSp3GXwPgImg&s"
-                    alt=""></a>
-        </div>
-        <div class="social" id="twitter">
-            <a href="http://twitter.com"><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI7eRQb9HdeyvAErXySNTA-LAC305f1OEh56CX2kEacg&s"
-                    alt=""></a>
-        </div>
-        <div class="social" id="instagram">
-            <a href="http://instagram.com"><img
-                    src="https://image.similarpng.com/very-thumbnail/2020/05/Vector-Instagram-icon-PNG.png" alt=""></a>
-        </div>
-        <div class="social" onclick="showSocial()" id="social">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85-2x0af8KQt-k5n3FpEonVpQFu4L8c4SmA52D8sbDg&s"
-                alt="">
-        </div>
-    </div>
     <nav>
-        <div class="logo">
-            <a href="index.html"><img src="jumong_logo-removebg-preview.png" alt="" title="Home"></a>
+        <div class="logo_icon">
+            <div class="logo">
+                <a href="index.html"><img src="jumong_logo-removebg-preview.png" alt="" title="Home"></a>
+            </div>
+            <div class="hamburger_icon" id="menu_icon" onclick="showMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
+
         <ul>
             <li><a href="index.html" class="nav_link" id="home_nav">Home</a></li>
             <li><a href="services.html" class="nav_link" id="services_nav">Services</a></li>
             <li><a href="about.html" class="nav_link" id="about_nav">About</a></li>
             <li><a href="contact.html" class="nav_link" id="contact_nav">Contact</a></li>
+            <li class="xmark_icon" id="close_icon" onclick="closeMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </li>
         </ul>
     </nav>
     <div class="index_body1">
@@ -91,8 +80,13 @@
                     <img src="https://cdn2.hubspot.net/hubfs/2004318/homebuilding.jpg" alt="residential">
                 </div>
                 <div class="residential_content">
-                    <p>Residential Construction</p>
+                    <h3>Residential Construction</h3>
                     <hr style="border: 2px solid black;">
+                    <p>Jumong Construction takes pride in crafting exceptional residential spaces that reflect the
+                        unique lifestyle and preferences of our clients. Whether you're dreaming of a cozy family home,
+                        a luxurious estate, or a modern urban dwelling, our team is dedicated to bringing your vision to
+                        fruition. With a keen eye for detail and a focus on quality craftsmanship, we ensure that every
+                        aspect of your residential project is meticulously planned and executed. </p>
                 </div>
             </div>
         </div>
@@ -108,8 +102,12 @@
                         alt="commercial">
                 </div>
                 <div class="commercial_content">
-                    <p>Commercial Construction</p>
+                    <h3>Commercial Construction</h3>
                     <hr style="border: 2px solid black;">
+                    <p>At Jumong Construction, we specialize in delivering top-tier commercial construction solutions
+                        tailored to meet the diverse needs of businesses. With a wealth of experience and a commitment
+                        to excellence, we bring your commercial vision to life, whether it's an office complex, retail
+                        space, or industrial facility.</p>
                 </div>
             </div>
         </div>
@@ -124,8 +122,14 @@
                     <img src="https://c0.wallpaperflare.com/preview/846/285/222/bills-broker-budget-build.jpg" alt=" ">
                 </div>
                 <div class="units_content">
-                    <p>Unit Sales</p>
+                    <h3>Unit Sales</h3>
                     <hr style="border: 2px solid black;">
+                    <p>Explore a diverse portfolio of premium units offered by Jumong Construction, where quality
+                        meets
+                        affordability. Whether you're seeking a stylish apartment, a spacious condominium, or a charming
+                        townhouse, our selection of units caters to a variety of preferences and lifestyles. Backed by
+                        our reputation for excellence and integrity, each unit is meticulously crafted with attention to
+                        detail and built to the highest standards of quality.</p>
                 </div>
             </div>
         </div>
@@ -180,7 +184,7 @@
     </div>
     <div class="index_body5">
         <h1>Contact Us</h1>
-        <p>Interested in working with us? Contact us now!</p>
+        <p class="contact_paragraph1">Interested in working with us? Contact us now!</p>
         <div class="index_body5_input">
             <input type="text" name="name" placeholder="Name" required>
             <input type="text" name="phone" placeholder="Phone" required>
@@ -204,6 +208,26 @@
         </div>
         <p> &copy 2024 Jumong Projects LTD. All rights reserved.</p>
     </footer>
+    <div class="social_float">
+        <div class="social" id="facebook">
+            <a href="https://web.facebook.com/jumongprojectsltd"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQinkKhh6KEJagFiRP44_KY-ygxDA5E4AkSp3GXwPgImg&s"
+                    alt=""></a>
+        </div>
+        <div class="social" id="twitter">
+            <a href="http://twitter.com"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI7eRQb9HdeyvAErXySNTA-LAC305f1OEh56CX2kEacg&s"
+                    alt=""></a>
+        </div>
+        <div class="social" id="instagram">
+            <a href="http://instagram.com"><img
+                    src="https://image.similarpng.com/very-thumbnail/2020/05/Vector-Instagram-icon-PNG.png" alt=""></a>
+        </div>
+        <div class="social" onclick="showSocial()" id="social">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85-2x0af8KQt-k5n3FpEonVpQFu4L8c4SmA52D8sbDg&s"
+                alt="">
+        </div>
+    </div>
     <script defer src="javaS.js"></script>
 </body>
 

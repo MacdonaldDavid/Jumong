@@ -50,8 +50,13 @@
         </div>
     </div>
     <nav>
-        <div class="logo">
-            <a href="index.html"><img src="jumong_logo-removebg-preview.png" alt="" title="Home"></a>
+        <div class="logo_icon">
+            <div class="logo">
+                <a href="index.html"><img src="jumong_logo-removebg-preview.png" alt="" title="Home"></a>
+            </div>
+            <div class="hamburger_icon" id="menu_icon" onclick="showMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
 
         <ul>
@@ -59,6 +64,9 @@
             <li><a href="services.html" class="nav_link" id="services_nav">Services</a></li>
             <li><a href="about.html" class="nav_link" id="about_nav">About</a></li>
             <li><a href="contact.html" class="nav_link" id="contact_nav">Contact</a></li>
+            <li class="xmark_icon" id="close_icon" onclick="closeMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </li>
         </ul>
     </nav>
     <div class="services_body1">

@@ -1,15 +1,61 @@
 const nav = document.querySelector('nav');
-const navLinks = document.querySelectorAll('nav ul li a');
-const logo = document.getElementById('logo');
+const navLinks = document.querySelectorAll('.nav_link');
 
-window.onscroll = function () {
+window.addEventListener("scroll", handleScroll);
+
+function handleScroll() {
     const scrollPosition = window.scrollY;
-    if (scrollPosition >= 100) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
+    const windowWidth = window.innerWidth;
+    const url = window.location.href;
+
+    if (url.includes("index") && windowWidth > 1024) {
+        if (scrollPosition >= 100) {
+            nav.style.backgroundColor = 'white';
+            navLinks.forEach(link => link.style.color = 'black');
+        } else {
+            nav.style.backgroundColor = 'transparent';
+            navLinks.forEach(link => link.style.color = 'white');
+        }
     }
-};
+}
+
+window.addEventListener("scroll", handleSmallScroll);
+function handleSmallScroll() {
+    const scrollPosition = window.scrollY;
+    const windowWidth = window.innerWidth;
+    const url = window.location.href;
+
+    if (url.includes("index") && windowWidth <= 1024) {
+        if (scrollPosition >= 100) {
+            nav.style.backgroundColor = 'white';
+        } else {
+            nav.style.backgroundColor = 'transparent';
+        }
+    }
+}
+
+function showMenu() {
+    const menu_icon = document.getElementById('menu_icon');
+    const nav_ul = document.querySelector('nav ul');
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth <= 1024) {
+        menu_icon.style.display = 'none';
+        nav_ul.style.transform = 'translateY(-20%)'
+    }
+}
+
+function closeMenu() {
+    const xmark = document.getElementById('close_icon');
+    const nav_ul = document.querySelector('nav ul');
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth <= 1024) {
+        menu_icon.style.display = 'flex';
+        nav_ul.style.transform = 'translateY(-120%)'
+    }
+
+}
 var counter1 = 0;
 function openResidential() {
     counter1++
